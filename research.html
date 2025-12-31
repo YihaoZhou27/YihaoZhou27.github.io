@@ -4,11 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Your Name</title>
+    <title>Research - Yihao Zhou</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <!-- MathJax for LaTeX equations -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ]
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 
 <body>
@@ -20,7 +36,7 @@
 
     <main class="container research-page">
         <header class="research-header">
-            <span class="research-tag">Your Research Area</span>
+            <span class="research-tag">My Research Area</span>
             <h1 class="page-title">Research Highlights</h1>
             <p class="research-subtitle">
                 Selected projects and their key findings
@@ -34,74 +50,81 @@
             <article class="highlight-card">
                 <a href="#" class="highlight-link" target="_blank" rel="noopener">
                     <div class="highlight-image">
-                        <img src="images/research-1.jpg" alt="Research visualization 1">
+                        <img src="images/astrid_review.jpg" alt="Research visualization 1">
                         <div class="highlight-overlay"></div>
                     </div>
                     <div class="highlight-content">
                         <span class="highlight-year">2025</span>
-                        <h3 class="highlight-title">Title of Your First Research Project</h3>
+                        <h3 class="highlight-title">The ASTRID Simulation at z=0</h3>
                         <p class="highlight-description">
-                            A brief description of this research project. Explain the key findings,
-                            methodology, or impact in 2-3 sentences. This gives readers a quick
-                            overview of what the paper is about.
+                            ASTRID is one of the largest hydrodynamical cosmological simulations evolved to $z=0$. It hosts
+                            $2\times5500^3$ particles in a box size of 250 Mpc/h per side.
+                            ASTRID features a large population of massive black holes (MBHs), ranging from $10^4$ to $10^{11}$ M$_\odot$, and implements a subgrid dynamical friction model to provide a better description of the MBH orbital evolution.
+                            This makes it a powerful tool to study the formation and evolution of MBHs in a cosmological context.
                         </p>
                         <span class="highlight-cta">Read Paper →</span>
                     </div>
                 </a>
             </article>
 
-            <!-- Highlight Card 2 -->
-            <article class="highlight-card">
-                <a href="#" class="highlight-link" target="_blank" rel="noopener">
-                    <div class="highlight-image">
-                        <img src="images/research-2.jpg" alt="Research visualization 2">
-                        <div class="highlight-overlay"></div>
-                    </div>
-                    <div class="highlight-content">
-                        <span class="highlight-year">2024</span>
-                        <h3 class="highlight-title">Title of Your Second Research Project</h3>
-                        <p class="highlight-description">
-                            Another brief description explaining the significance of this work.
-                            Highlight the novel contributions and key results that make this
-                            research stand out.
-                        </p>
-                        <span class="highlight-cta">Read Paper →</span>
-                    </div>
-                </a>
-            </article>
+
 
             <!-- Highlight Card 3 -->
             <article class="highlight-card">
                 <a href="#" class="highlight-link" target="_blank" rel="noopener">
                     <div class="highlight-image">
-                        <img src="images/research-3.jpg" alt="Research visualization 3">
+                        <img src="images/magics.png" alt="Research visualization 3">
                         <div class="highlight-overlay"></div>
                     </div>
                     <div class="highlight-content">
                         <span class="highlight-year">2024</span>
-                        <h3 class="highlight-title">Title of Your Third Research Project</h3>
+                        <h3 class="highlight-title">MAGICS: Massive black hole Assembly in Galaxies
+                            Informed by Cosmological Simulations</h3>
                         <p class="highlight-description">
-                            Describe what makes this research interesting. You can mention
-                            collaborators, unique approaches, or how it advances the field.
+                            To bridge the gap between cosmological simulations and small-scale MBH dynamics, we developed MAGICS.
+                            We reproduce merging systems in ASTRID with high-resolution idealized simulations, and implement better gravity solver: regularized integrator KETJU and $N$-body code TAICHI.
+                            This allows us to study the MBH dynamics on sub-parsec scales, which gives a better description of the MBH merger process.
                         </p>
                         <span class="highlight-cta">Read Paper →</span>
                     </div>
                 </a>
             </article>
 
+
+            <!-- Highlight Card 2 -->
+            <article class="highlight-card">
+                <a href="#" class="highlight-link" target="_blank" rel="noopener">
+                    <div class="highlight-image">
+                        <img src="images/PTA_CWsources.png" alt="Research visualization 2">
+                        <div class="highlight-overlay"></div>
+                    </div>
+                    <div class="highlight-content">
+                        <span class="highlight-year">2024</span>
+                        <h3 class="highlight-title">PTA Continuous Wave Sources</h3>
+                        <p class="highlight-description">
+                            We uses the MBH population in ASTRID to predict the continuous wave (CW) sources for the PTA experiments.
+                            We found all the high-detectability CW sources are from the central galaxies of the massive galaxy clusters.
+                        </p>
+                        <span class="highlight-cta">Read Paper →</span>
+                    </div>
+                </a>
+            </article>
+
+
             <!-- Highlight Card 4 -->
             <article class="highlight-card">
                 <a href="#" class="highlight-link" target="_blank" rel="noopener">
                     <div class="highlight-image">
-                        <img src="images/research-4.jpg" alt="Research visualization 4">
+                        <img src="images/LISA_detection.png" alt="Research visualization 4">
+
                         <div class="highlight-overlay"></div>
                     </div>
                     <div class="highlight-content">
                         <span class="highlight-year">2023</span>
-                        <h3 class="highlight-title">Title of Your Fourth Research Project</h3>
+                        <h3 class="highlight-title">Predicting LISA Detection Rates</h3>
                         <p class="highlight-description">
-                            A short summary of this research work. Keep it concise but informative
-                            enough to pique the reader's interest.
+                            Based on ASTRID, we predicted the detection rates of the LISA experiment.
+                            We found that considering the evolution of MBH orbital eccentricity, the black hole mass range explored by LISA is extended to high mass end: $\approx 10^9$ M$_\odot$.
                         </p>
                         <span class="highlight-cta">Read Paper →</span>
                     </div>
