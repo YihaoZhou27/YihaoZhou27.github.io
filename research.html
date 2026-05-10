@@ -37,125 +37,125 @@
 
     <main class="container research-page">
         <header class="research-header">
-            <span class="research-tag">My Research Area</span>
+            <span class="research-tag">Research</span>
             <h1 class="page-title">Research Highlights</h1>
             <p class="research-subtitle">
-                Selected projects and their key findings
+                Brief introductions to selected research projects.
             </p>
         </header>
 
-        <!-- Research Highlights Grid -->
-        <section class="highlights-grid">
-
-            <!-- Highlight Card 1 -->
-            <article class="highlight-card">
-                <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv251013976Z/abstract" class="highlight-link" target="_blank" rel="noopener">
-                    <div class="highlight-image">
-                        <img src="images/astrid_review.jpg" alt="Research visualization 1">
-                        <div class="highlight-overlay"></div>
-                    </div>
-                    <div class="highlight-content">
-                        <span class="highlight-year">2025</span>
-                        <h3 class="highlight-title">The ASTRID Simulation at z=0</h3>
-                        <p class="highlight-description">
-                            ASTRID is one of the largest hydrodynamical cosmological simulations evolved to $z=0$. It hosts
-                            $2\times5500^3$ particles in a box size of 250 Mpc/h per side.
-                            ASTRID features a large population of massive black holes (MBHs), ranging from $10^4$ to $10^{11}$ M$_\odot$,
-                            and a black hole dynamical friction model that properly describes the MBH orbital evolution.
-                            This makes it a powerful tool to study the formation and evolution of MBHs in a cosmological context.
-                        </p>
-                        <span class="highlight-cta">Read Paper →</span>
-                    </div>
-                </a>
+        <section class="research-project-list">
+            <article class="research-project">
+                <div class="project-header">
+                    <h2 class="project-title">The ASTRID Simulation at $z=0$</h2>
+                </div>
+                <figure class="project-figure">
+                    <img src="images/astrid_review.jpg" alt="Visualization from the ASTRID simulation">
+                    <figcaption>
+                        Illustration of the ASTRID simulation at $z=0$. The image shows multiple physical fields in a slice of the simulation box.
+                    </figcaption>
+                </figure>
+                <p>
+                    ASTRID is one of the largest hydrodynamical cosmological simulations evolved to $z=0$. It hosts
+                    $2\times5500^3$ particles in a box with 370 Mpc per side. It hosts a large population of
+                    massive black holes (MBHs), spanning from $10^4$ to $10^{11}$ M$_\odot$, and includes a black hole
+                    dynamical friction model that properly captures MBH orbital evolution.
+                    The large dynamic range of Astrid on one hand allows detailed studies of galaxy and massive black hole evolution at high resolution,
+                    and on the other hand allows systematic studies of rare massive systems with the large cosmic volume.
+                    Astrid is now used to provide predictions or interpretations of current and future observations, such as the Pulsar Timing Array, Laser Interferometer Space Antenna (LISA),
+                    and the Rubin Observatory's Legacy Survey of Space and Time (LSST), James Webb Space Telescope (JWST).
+                    I am very grateful to have the opportunity to run the last chunk of ASTRID down to $z=0$.
+                    The simulation datasets are now publicly available at <a href="https://astrid.psc.edu" class="link" target="_blank" rel="noopener">https://astrid.psc.edu</a>.
+                </p>
+                <p class="project-links">
+                    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv251013976Z/abstract" class="link" target="_blank" rel="noopener">Read paper: Zhou et al. 2026</a>
+                </p>
             </article>
 
-
-
-            <!-- Highlight Card 2 -->
-            <article class="highlight-card">
-                <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...980...79Z/abstract" class="highlight-link" target="_blank" rel="noopener">
-                    <div class="highlight-image">
-                        <img src="images/magics.png" alt="Research visualization 3">
-                        <div class="highlight-overlay"></div>
-                    </div>
-                    <div class="highlight-content">
-                        <span class="highlight-year">2024</span>
-                        <h3 class="highlight-title">MAGICS: Massive black hole Assembly in Galaxies
-                            Informed by Cosmological Simulations</h3>
-                        <p class="highlight-description">
-                            To bridge the gap between cosmological simulations and small-scale MBH dynamics, we developed MAGICS.
-                            We reproduce merging systems in ASTRID with high-resolution idealized simulations, and implement better gravity solver: regularized integrator KETJU and $N$-body code TAICHI.
-                            This allows us to study the MBH dynamics on sub-parsec scales, which gives a better description of the MBH merger process.
-                        </p>
-                        <span class="highlight-cta">Read Paper →</span>
-                    </div>
-                </a>
+            <article class="research-project">
+                <div class="project-header">
+                    <h2 class="project-title">MAGICS: Massive Black Hole Assembly in Galaxies Informed by Cosmological Simulations</h2>
+                </div>
+                <figure class="project-figure">
+                    <img src="images/magics.png" alt="Visualization from the MAGICS simulation suite">
+                    <figcaption>
+                        High-resolution follow-up simulations connecting cosmological environments to sub-parsec MBH dynamics.
+                    </figcaption>
+                </figure>
+                <p>
+                    MAGICS simulation suite bridges the gap between cosmological simulations and small-scale MBH dynamics.
+                    We select 15 MBH seed merger events from ASTRID that are detectable by upcoming LISA, and reproduce them using high-resolution idealized simulations.
+                    Besides the higher resolution, we also adopt improved gravity solvers, including the regularized integrator KETJU and the $N$-body code TAICHI.
+                    This allows us to trace the MBH dynamics down to sub-parsec scales in realistic galaxy environments of LISA sources.
+                    Based on MAGICS, we found that the MBH dynamics is significantly affected by the surrounding stellar environment, and that
+                    nuclear star clusters (NSCs) can significantly accelerate MBH seed mergers.
+                    This highlights the importance of understanding the MBH dynamics in realistic galaxy environments, and the need for high-resolution simulations to study this.
+                </p>
+                <p class="project-links">
+                    <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...980...79Z/abstract" class="link" target="_blank" rel="noopener">Read paper: Zhou et al. 2025</a>,
+                    <!--<a href="https://iopscience.iop.org/article/10.3847/1538-4357/adb1b0" class="link" target="_blank" rel="noopener"> Mukherjee;Zhou et al. 2025</a>-->
+                </p>
             </article>
 
-
-            <!-- Highlight Card 3 -->
-            <article class="highlight-card">
-                <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260401123Z/abstract" class="highlight-link" target="_blank" rel="noopener">
-                    <div class="highlight-image">
-                        <img src="images/AMBRA_astrid_compare.png" alt="Research visualization 2">
-                        <div class="highlight-overlay"></div>
-                    </div>
-                    <div class="highlight-content">
-                        <span class="highlight-year">2026</span>
-                        <h3 class="highlight-title">AMBRA: ASTRID with MBH seeding from BRAMA </h3>
-                        <p class="highlight-description">
-                            AMBRA combines the large cosmological volume and statistical power of ASTRID with the physically motivated gas-based black hole seeding models from BRAHMA.
-                            Motivated by JWST's discoveries of massive black holes (BHs) at $z\gtrsim 9$, AMBRA adopts a lenient heavy-seed prescription from the BRAHMA suite, allowing for the formation of $4\times 10^{4-5}\ M_{\odot}$ seeds in halos with star-forming, metal-poor gas.
-                            The seeding model is motivated by scenarios in which heavy seeds form through stellar collisions in star clusters or from the rapid growth of Population III remnants.
-                            The improved seeding model enables AMBRA to form BH seeds much earlier and more efficiently compared to ASTRID.
-                        </p>
-                        <span class="highlight-cta">Read Paper →</span>
-                    </div>
-                </a>
+            <article class="research-project">
+                <div class="project-header">
+                    <h2 class="project-title">AMBRA: ASTRID with MBH Seeding from BRAHMA</h2>
+                </div>
+                <figure class="project-figure">
+                    <img src="images/AMBRA_astrid_compare.png" alt="Comparison of AMBRA and ASTRID black hole populations">
+                    <figcaption>
+                        AMBRA combines ASTRID-scale statistics with physically motivated BH seeding from BRAHMA.
+                    </figcaption>
+                </figure>
+                <p>
+                    AMBRA combines the large cosmological volume of ASTRID with gas-based black hole seeding models from
+                    BRAHMA. Motivated by JWST discoveries of massive BHs at $z\gtrsim 9$, AMBRA adopts a lenient heavy-seed
+                    prescription that allows $4\times 10^{4-5}$ M$_\odot$ seeds to form in star-forming, metal-poor gas.
+                    Compared with ASTRID, this model forms seeds earlier and more efficiently, and produces some of the massive black holes detected by JWST at high redshifts ($z\gtrsim 8$).
+                    AMBRA simulation produces a population of Little Red Dots (LRDs); which allows us to have a systematic study of the evolution of these objects.
+                </p>
+                <p class="project-links">
+                    <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260401123Z/abstract" class="link" target="_blank" rel="noopener">Read paper: Zhou et al. 2026</a>
+                </p>
             </article>
 
-
-
-            <!-- Highlight Card 3 -->
-            <article class="highlight-card">
-                <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988L..74Z/abstract" class="highlight-link" target="_blank" rel="noopener">
-                    <div class="highlight-image">
-                        <img src="images/PTA_CWsources.png" alt="Research visualization 2">
-                        <div class="highlight-overlay"></div>
-                    </div>
-                    <div class="highlight-content">
-                        <span class="highlight-year">2024</span>
-                        <h3 class="highlight-title">PTA Continuous Wave Sources</h3>
-                        <p class="highlight-description">
-                            We uses the MBH population in ASTRID to predict the continuous wave (CW) sources for the PTA experiments.
-                            We found all the high-detectability CW sources are from the central galaxies of the massive galaxy clusters.
-                        </p>
-                        <span class="highlight-cta">Read Paper →</span>
-                    </div>
-                </a>
+            <article class="research-project">
+                <div class="project-header">
+                    <h2 class="project-title">PTA Continuous Wave Sources</h2>
+                </div>
+                <figure class="project-figure">
+                    <img src="images/PTA_CWsources.png" alt="Predicted PTA continuous wave sources from simulated MBH binaries">
+                    <figcaption>
+                        Predicted high-detectability PTA continuous-wave sources in the local universe.
+                    </figcaption>
+                </figure>
+                <p>
+                    We use the MBH population in ASTRID to predict continuous wave (CW) sources for PTA experiments.
+                    The highest-detectability CW sources are hosted by central galaxies in massive galaxy clusters.
+                </p>
+                <p class="project-links">
+                    <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988L..74Z/abstract" class="link" target="_blank" rel="noopener">Read paper: Zhou et al. 2025</a>
+                </p>
             </article>
 
-
-            <!-- Highlight Card 4 -->
-            <article class="highlight-card">
-                <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250324304W/abstract" class="highlight-link" target="_blank" rel="noopener">
-                    <div class="highlight-image">
-                        <img src="images/LISA_detection.png" alt="Research visualization 4">
-
-                        <div class="highlight-overlay"></div>
-                    </div>
-                    <div class="highlight-content">
-                        <span class="highlight-year">2023</span>
-                        <h3 class="highlight-title">Predicting LISA Detection Rates</h3>
-                        <p class="highlight-description">
-                            Based on ASTRID, we predicted the detection rates of the LISA experiment.
-                            We found that considering the evolution of MBH orbital eccentricity, the black hole mass range explored by LISA is extended to high mass end: $\approx 10^9$ M$_\odot$.
-                        </p>
-                        <span class="highlight-cta">Read Paper →</span>
-                    </div>
-                </a>
+            <article class="research-project">
+                <div class="project-header">
+                    <h2 class="project-title">Predicting LISA Detection Rates</h2>
+                </div>
+                <figure class="project-figure">
+                    <img src="images/LISA_detection.png" alt="Predicted LISA detections from ASTRID-based black hole populations">
+                    <figcaption>
+                        ASTRID-based predictions for LISA detections across black hole mass and redshift.
+                    </figcaption>
+                </figure>
+                <p>
+                    We predicted detection rates for LISA and found that accounting for orbital eccentricity
+                    extends LISA sensitivity toward higher masses, up to approximately $10^9$ M$_\odot$.
+                </p>
+                <p class="project-links">
+                    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250324304W/abstract" class="link" target="_blank" rel="noopener">Read paper: Wang; Zhou et al. 2025</a>
+                </p>
             </article>
-
         </section>
 
         <div class="divider"></div>
