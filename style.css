@@ -162,6 +162,35 @@ body:has(.research-page) {
     font-style: normal;
 }
 
+.sim-list {
+    list-style: none;
+    margin: 1rem 0 1.25rem;
+    padding: 0;
+}
+
+.sim-list li {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.sim-list li::before {
+    content: "◦";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.sim-name {
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
 /* Focus/Expertise */
 .focus {
     margin: 1.5rem 0 3rem;
