@@ -8,6 +8,7 @@
     --accent: #c9a96e;
     --accent-glow: rgba(201, 169, 110, 0.15);
     --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Book Antiqua', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Palatino LT STD', Georgia, serif;
     --font-mono: 'JetBrains Mono', 'Courier New', monospace;
 }
 
@@ -153,7 +154,9 @@ body:has(.research-page) {
 }
 
 .description p {
-    font-size: 1.25rem;
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    line-height: 1.75;
     color: var(--text-body);
     font-style: normal;
 }
@@ -163,6 +166,10 @@ body:has(.research-page) {
     font-style: normal;
 }
 
+.person {
+    font-style: italic;
+}
+
 .sim-list {
     list-style: none;
     margin: 1rem 0 1.25rem;
@@ -170,7 +177,9 @@ body:has(.research-page) {
 }
 
 .sim-list li {
-    font-size: 1.15rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
     color: var(--text-body);
     font-style: normal;
     padding-left: 1.25rem;
