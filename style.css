@@ -4,6 +4,7 @@
     --bg-secondary: #111113;
     --text-primary: #e8e6e3;
     --text-secondary: #9a9a9a;
+    --text-body: #b8b6b3;
     --accent: #c9a96e;
     --accent-glow: rgba(201, 169, 110, 0.15);
     --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -153,8 +154,8 @@ body:has(.research-page) {
 
 .description p {
     font-size: 1.25rem;
-    color: var(--text-secondary);
-    font-style: italic;
+    color: var(--text-body);
+    font-style: normal;
 }
 
 .org {
@@ -170,8 +171,8 @@ body:has(.research-page) {
 
 .sim-list li {
     font-size: 1.15rem;
-    color: var(--text-secondary);
-    font-style: italic;
+    color: var(--text-body);
+    font-style: normal;
     padding-left: 1.25rem;
     margin-bottom: 0.5rem;
     position: relative;
